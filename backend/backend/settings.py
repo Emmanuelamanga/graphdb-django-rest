@@ -21,7 +21,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/5.1/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'django-insecure-8xk7nz$6v86jpi(g@v*9cyvmh=&r7e3t@-^lxixebdgi_-pmq*'
+# SECRET_KEY = 'django-insecure-8xk7nz$6v86jpi(g@v*9cyvmh=&r7e3t@-^lxixebdgi_-pmq*'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -134,3 +134,5 @@ CORS_ALLOW_ALL_ORIGINS = True
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
+import django_heroku
+django_heroku.settings(locals())
