@@ -1,0 +1,18 @@
+@prefix ex: <http://example.org/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+# This defines a book resource with various properties
+ex:book1 a ex:Book ;
+    dc:title "Introduction to Turtle" ;
+    dc:creator "John Doe" ;
+    dc:date "2023-08-20" ;
+    ex:publisher "Example Publisher" ;
+    ex:isbn "978-3-16-148410-0" .
+
+# This defines another book resource with encoded IRI
+<http://example.org/book%202> a ex:Book ;
+    dc:title "Advanced Turtle Concepts" ;
+    dc:creator "Jane Doe" ;
+    dc:date "2024-01-15" ;
+    ex:publisher "Another Publisher" ;
+    ex:isbn "978-1-23-456789-0" .
