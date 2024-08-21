@@ -34,4 +34,5 @@ sqlparse==0.5.1
 tempora==5.7.0
 tzdata==2024.1
 urllib3==2.2.2
+whitenoise==6.7.0
 zc.lockfile==3.0.post1
