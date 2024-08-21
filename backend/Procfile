@@ -1,1 +1,1 @@
-web: gunicorn backend.wsgi --bind 0.0.0.0:$PORT
+web: waitress-serve --port=8000 backend.wsgi:application
